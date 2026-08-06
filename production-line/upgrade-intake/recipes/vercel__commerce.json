@@ -1,0 +1,36 @@
+{
+  "repo": "vercel/commerce",
+  "type": "frontend",
+  "template": "empty",
+  "replaces_or_adds": "SKILL.md Phase 2 的店面骨架。要回答的是：能不能直接拿它當商品列表與商品頁的起點，取代目前從設計規範自己長出來的作法。",
+  "steps": [
+    {
+      "name": "取得原始碼",
+      "cmd": ["git", "clone", "--depth", "1", "https://github.com/vercel/commerce.git", "app"],
+      "timeout": 600
+    },
+    {
+      "name": "安裝依賴",
+      "cmd": ["npm", "install", "--no-audit", "--no-fund", "--legacy-peer-deps"],
+      "cwd": "app",
+      "timeout": 1200
+    }
+  ],
+  "build": {
+    "cmd": ["npm", "run", "build"],
+    "cwd": "app",
+    "timeout": 1200
+  },
+  "serve": {
+    "cmd": ["npm", "run", "start", "--", "-p", "{port}"],
+    "cwd": "app",
+    "ready_timeout": 120
+  },
+  "expect": {
+    "routes": ["/"],
+    "min_visible_elements": 30,
+    "min_body_text": 200,
+    "no_console_error": true,
+    "screenshot_min_bytes": 20000
+  }
+}

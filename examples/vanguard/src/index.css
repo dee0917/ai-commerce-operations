@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Inter:wght@300;400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-vanguard-obsidian text-slate-200 font-sans selection:bg-vanguard-red selection:text-white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-mono uppercase tracking-tighter;
+  }
+}
+
+@layer components {
+  .btn-tactical {
+    @apply relative overflow-hidden bg-vanguard-red text-white py-3 px-8 font-mono font-bold uppercase tracking-wider transition-all duration-300 hover:bg-white hover:text-vanguard-red active:scale-95;
+  }
+
+  .bento-card {
+    @apply bg-vanguard-industrial border border-vanguard-slate/30 rounded-lg overflow-hidden transition-all duration-500 hover:border-vanguard-red/50 hover:shadow-tactical;
+  }
+
+  .glass-panel {
+    @apply bg-vanguard-industrial/80 backdrop-blur-xl border border-white/5;
+  }
+}
+
+/* Custom Animations */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Skeleton Pulse */
+.skeleton {
+  @apply bg-vanguard-slate/20 animate-pulse;
+}
+
+/* Hide Scrollbar but allow scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,45 @@
+{
+  "repo": "facebook/astryx",
+  "type": "frontend",
+  "replaces_or_adds": "references/modern-ui-frameworks.md 目前收錄的 UI 框架清單。要回答的是：它能不能成為清單裡的一個選項，做出產線規格的商品區。",
+  "started_at": "2026-08-04T07:21:34Z",
+  "verdict": "PASS",
+  "why": [
+    "建置退出碼 0，畫面實際畫得出來，指定內容都在，主控台無錯誤，截圖有內容。"
+  ],
+  "measurements": {
+    "/": {
+      "bodyText": 345,
+      "visible": 61,
+      "inView": 78,
+      "hidden": 0,
+      "missingTexts": [],
+      "consoleErrors": [],
+      "pageErrors": [],
+      "error": null,
+      "screenshot_bytes": 65827
+    }
+  },
+  "fallback_signals": [],
+  "finished_at": "2026-08-04T07:21:57Z",
+  "log": [
+    {
+      "cmd": "npm.CMD install --no-audit --no-fund",
+      "rc": 0,
+      "seconds": 6.2,
+      "tail": "\nadded 65 packages in 6s\n"
+    },
+    {
+      "cmd": "npm.CMD install --no-audit --no-fund @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex",
+      "rc": 0,
+      "seconds": 7.0,
+      "tail": "\nadded 12 packages in 7s\n"
+    },
+    {
+      "cmd": "npm.CMD run build",
+      "rc": 0,
+      "seconds": 4.9,
+      "tail": "ronment for production...\u001b[36m\u001b[39m\ntransforming...\n\u001b[32m✓\u001b[39m 1878 modules transformed.\nrendering chunks...\ncomputing gzip size...\n\u001b[2mdist/\u001b[22m\u001b[32mindex.html                  \u001b[39m\u001b[1m\u001b[2m  0.40 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:  0.29 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[35massets/index-DWMSBfgs.css   \u001b[39m\u001b[1m\u001b[2m144.29 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip: 26.86 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[36massets/Tooltip-Bjur0SNC.js  \u001b[39m\u001b[1m\u001b[2m  1.74 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:  0.77 kB\u001b[22m\n\u001b[2mdist/\u001b[22m\u001b[36massets/index-DZPCn7rg.js    \u001b[39m\u001b[1m\u001b[2m283.57 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip: 88.76 kB\u001b[22m\n\u001b[32m✓ built in 3.74s\u001b[39m\n"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "repo": "vercel/commerce",
+  "type": "frontend",
+  "replaces_or_adds": "SKILL.md Phase 2 的店面骨架。要回答的是：能不能直接拿它當商品列表與商品頁的起點，取代目前從設計規範自己長出來的作法。",
+  "started_at": "2026-08-04T07:24:48Z",
+  "verdict": "FAIL",
+  "why": [
+    "/ 實際畫得出來的元素只有 21 個，低於門檻 30。頁面打得開不等於畫得出來。"
+  ],
+  "measurements": {
+    "/": {
+      "bodyText": 215,
+      "visible": 21,
+      "inView": 50,
+      "hidden": 0,
+      "missingTexts": [],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+      ],
+      "pageErrors": [
+        "Error: An error occurred in the Server Components render. The specific message is omitted in production builds to avoid leaking sensitive details. A digest property is included on this error instance "
+      ],
+      "error": null
+    }
+  },
+  "fallback_signals": [],
+  "finished_at": "2026-08-04T07:25:40Z",
+  "log": [
+    {
+      "cmd": "git.EXE clone --depth 1 https://github.com/vercel/commerce.git app",
+      "rc": 0,
+      "seconds": 1.4,
+      "tail": "Cloning into 'app'...\n"
+    },
+    {
+      "cmd": "npm.CMD install --no-audit --no-fund --legacy-peer-deps",
+      "rc": 0,
+      "seconds": 31.2,
+      "tail": "\nadded 77 packages in 31s\n"
+    },
+    {
+      "cmd": "npm.CMD run build",
+      "rc": 0,
+      "seconds": 13.5,
+      "tail": "d.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`\n[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`\n[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`\n[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`\n"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+.vercel
+
+# TypeScript incremental build cache — a build artifact, not a deliverable
+*.tsbuildinfo

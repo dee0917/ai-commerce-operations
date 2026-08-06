@@ -1,0 +1,21 @@
+{
+  "repo": "_mutation/timeout",
+  "type": "frontend",
+  "replaces_or_adds": "不評估任何東西。這份是用來證明關卡在逾時的時候會說『不知道』，而不是硬給一個通過或失敗。改壞了就會看到它變成 PASS 或 FAIL。",
+  "started_at": "2026-08-04T07:26:44Z",
+  "verdict": "INCONCLUSIVE",
+  "why": [
+    "步驟「故意設一個不可能完成的時限」逾時，狀態不明。不判通過也不判失敗。"
+  ],
+  "measurements": {},
+  "fallback_signals": [],
+  "finished_at": "2026-08-04T07:26:50Z",
+  "log": [
+    {
+      "cmd": "npm.CMD install --no-audit --no-fund",
+      "rc": 124,
+      "seconds": 1,
+      "tail": "逾時 1 秒後仍未結束"
+    }
+  ]
+}

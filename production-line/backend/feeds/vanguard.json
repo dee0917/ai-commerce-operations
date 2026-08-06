@@ -1,0 +1,222 @@
+{
+  "categories": [
+    {
+      "name": "Core Essentials",
+      "slug": "core-essentials"
+    },
+    {
+      "name": "Technical Carry",
+      "slug": "technical-carry"
+    },
+    {
+      "name": "Precision Tools",
+      "slug": "precision-tools"
+    }
+  ],
+  "products": [
+    {
+      "name": "Titanium Carabiner \"Apex\"",
+      "slug": "titanium-carabiner-apex",
+      "sku": "VG-APEX-TI",
+      "description": "Aerospace-grade titanium carabiner with integrated bottle opener and glass breaker. Lightweight, indestructible, and essential for any tactical keychain setup.",
+      "short_description": "Aerospace-grade titanium EDC carabiner.",
+      "regular_price": "45",
+      "sale_price": "",
+      "stock_quantity": 15,
+      "stock_status": "instock",
+      "categories": [
+        "core-essentials"
+      ],
+      "images": [
+        "/products/titanium-carabiner-apex.jpg"
+      ]
+    },
+    {
+      "name": "Carbon Fiber Slim Wallet \"Cipher\"",
+      "slug": "carbon-fiber-slim-wallet-cipher",
+      "sku": "VG-CPHR-CF",
+      "description": "Ultra-slim RFID blocking wallet made from real 3K carbon fiber and aerospace aluminum. Holds up to 12 cards without the bulk of a traditional wallet.",
+      "short_description": "RFID blocking carbon fiber slim wallet.",
+      "regular_price": "89",
+      "sale_price": "79",
+      "stock_quantity": 8,
+      "stock_status": "instock",
+      "categories": [
+        "core-essentials"
+      ],
+      "images": [
+        "/products/carbon-fiber-slim-wallet-cipher.jpg"
+      ]
+    },
+    {
+      "name": "Bolt Action Tactical Pen \"Stinger\"",
+      "slug": "bolt-action-tactical-pen-stinger",
+      "sku": "VG-STGR-BA",
+      "description": "Precision-machined bolt action pen. Features a tungsten steel glass breaker tip and aerospace aluminum body. compatible with Parker G2 refills.",
+      "short_description": "Precision-machined bolt action tactical pen.",
+      "regular_price": "55",
+      "sale_price": "",
+      "stock_quantity": 20,
+      "stock_status": "instock",
+      "categories": [
+        "precision-tools"
+      ],
+      "images": [
+        "/products/bolt-action-tactical-pen-stinger.jpg"
+      ]
+    },
+    {
+      "name": "Keychain Light \"Lumen\"",
+      "slug": "keychain-light-lumen",
+      "sku": "VG-LUMN-TK",
+      "description": "650 lumens of blazing light in a package no bigger than your thumb. 4 lighting modes including tactical strobe. IPX8 waterproof rating.",
+      "short_description": "650 lumen ultra-compact keychain light.",
+      "regular_price": "35",
+      "sale_price": "",
+      "stock_quantity": 30,
+      "stock_status": "instock",
+      "categories": [
+        "core-essentials"
+      ],
+      "images": [
+        "/products/keychain-light-lumen.jpg"
+      ]
+    },
+    {
+      "name": "Modular Key Organizer \"Axis\"",
+      "slug": "modular-key-organizer-axis",
+      "sku": "VG-AXIS-KO",
+      "description": "Quiet your keys and organize your life. The Axis holds 2-7 keys in a compact, jingle-free profile. Includes an integrated multi-tool.",
+      "short_description": "Jingle-free modular key organization system.",
+      "regular_price": "42",
+      "sale_price": "",
+      "stock_quantity": 25,
+      "stock_status": "instock",
+      "categories": [
+        "core-essentials"
+      ],
+      "images": [
+        "/products/modular-key-organizer-axis.jpg"
+      ]
+    },
+    {
+      "name": "Precision CNC Tweezers \"Needle\"",
+      "slug": "precision-cnc-tweezers-needle",
+      "sku": "VG-NDLE-TW",
+      "description": "Titanium tweezers machined to a tolerance of 0.01mm. Perfect for precision work, removing splinters, or handling sensitive electronic components.",
+      "short_description": "Ultra-high precision titanium tweezers.",
+      "regular_price": "28",
+      "sale_price": "",
+      "stock_quantity": 12,
+      "stock_status": "instock",
+      "categories": [
+        "precision-tools"
+      ],
+      "images": [
+        "/products/precision-cnc-tweezers-needle.jpg"
+      ]
+    },
+    {
+      "name": "Multi-Tool Card \"Void\"",
+      "slug": "multi-tool-card-void",
+      "sku": "VG-VOID-MT",
+      "description": "20+ tools in the size of a credit card. Includes wrenches, drivers, openers, and measuring tools. Heat-treated stainless steel with matte black finish.",
+      "short_description": "20-in-1 stainless steel wallet multi-tool.",
+      "regular_price": "25",
+      "sale_price": "19",
+      "stock_quantity": 50,
+      "stock_status": "instock",
+      "categories": [
+        "precision-tools"
+      ],
+      "images": [
+        "/products/multi-tool-card-void.jpg"
+      ]
+    },
+    {
+      "name": "EDC Tech Pouch \"Cell\"",
+      "slug": "edc-tech-pouch-cell",
+      "sku": "VG-CELL-XP",
+      "description": "Weather-resistant X-Pac fabric pouch for organizing your tech essentials. YKK AquaGuard zippers and high-vis orange interior.",
+      "short_description": "X-Pac tactical tech and cable organizer.",
+      "regular_price": "65",
+      "sale_price": "",
+      "stock_quantity": 10,
+      "stock_status": "instock",
+      "categories": [
+        "technical-carry"
+      ],
+      "images": [
+        "/products/edc-tech-pouch-cell.jpg"
+      ]
+    },
+    {
+      "name": "Aluminum Pry Bar \"Lever\"",
+      "slug": "aluminum-pry-bar-lever",
+      "sku": "VG-LEVR-AL",
+      "description": "Compact 7075-T6 aluminum pry bar. Save your pocket knife for cutting. Heavy-duty prying, scraping, and scoring tool.",
+      "short_description": "Heavy-duty 7075 aluminum EDC pry tool.",
+      "regular_price": "38",
+      "sale_price": "",
+      "stock_quantity": 4,
+      "stock_status": "instock",
+      "categories": [
+        "precision-tools"
+      ],
+      "images": [
+        "/products/aluminum-pry-bar-lever.jpg"
+      ]
+    },
+    {
+      "name": "Ceramic Folding Blade \"Razor\"",
+      "slug": "ceramic-folding-blade-razor",
+      "sku": "VG-RAZR-CB",
+      "description": "Non-metallic, non-corrosive zirconium oxide ceramic blade. Stays sharp 10x longer than steel. ultra-lightweight carbon fiber handle.",
+      "short_description": "Zirconium ceramic blade with carbon fiber handle.",
+      "regular_price": "120",
+      "sale_price": "",
+      "stock_quantity": 0,
+      "stock_status": "outofstock",
+      "categories": [
+        "precision-tools"
+      ],
+      "images": [
+        "/products/ceramic-folding-blade-razor.jpg"
+      ]
+    },
+    {
+      "name": "Magnetic Bit Driver Set \"Torque\"",
+      "slug": "magnetic-bit-driver-set-torque",
+      "sku": "VG-TRQE-BS",
+      "description": "Solid brass driver with ball-bearing swivel top. Includes 10 S2 steel micro bits in a tactical magnetic case. The ultimate desktop fidget and work tool.",
+      "short_description": "Solid brass precision bit driver set.",
+      "regular_price": "95",
+      "sale_price": "85",
+      "stock_quantity": 6,
+      "stock_status": "instock",
+      "categories": [
+        "precision-tools"
+      ],
+      "images": [
+        "/products/magnetic-bit-driver-set-torque.jpg"
+      ]
+    },
+    {
+      "name": "Titanium Pill Canister \"Secure\"",
+      "slug": "titanium-pill-canister-secure",
+      "sku": "VG-SCR-TI",
+      "description": "Waterproof, airtight titanium canister for meds or micro-essentials. Double O-ring seal and knurled grip. EDC for your vital supplies.",
+      "short_description": "Waterproof aerospace-grade titanium canister.",
+      "regular_price": "40",
+      "sale_price": "",
+      "stock_quantity": 18,
+      "stock_status": "instock",
+      "categories": [
+        "core-essentials"
+      ],
+      "images": [
+        "/products/titanium-pill-canister-secure.jpg"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "repo": "_mutation/timeout",
+  "type": "frontend",
+  "template": "vite-react",
+  "replaces_or_adds": "不評估任何東西。這份是用來證明關卡在逾時的時候會說『不知道』，而不是硬給一個通過或失敗。改壞了就會看到它變成 PASS 或 FAIL。",
+  "steps": [
+    {
+      "name": "故意設一個不可能完成的時限",
+      "cmd": ["npm", "install", "--no-audit", "--no-fund"],
+      "timeout": 1
+    }
+  ],
+  "build": {
+    "cmd": ["npm", "run", "build"],
+    "timeout": 300
+  },
+  "serve": {
+    "dir": "dist"
+  },
+  "expect": {
+    "routes": ["/"],
+    "min_visible_elements": 1,
+    "min_body_text": 1
+  }
+}

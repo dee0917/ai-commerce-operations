@@ -1,0 +1,36 @@
+{
+    "contract_version": "1.0",
+    "project": {
+        "name": "AuraGuard",
+        "dir": "projects/20260310-talisman-aura-guard",
+        "port": "5181"
+    },
+    "typescript_interfaces": {
+        "WooProduct": "src/types/index.ts",
+        "WooCategory": "src/types/index.ts",
+        "CartItem": "src/types/index.ts",
+        "CheckoutPayload": "src/types/index.ts"
+    },
+    "file_ownership": {
+        "engineer_agent": [
+            "src/components/",
+            "src/hooks/",
+            "src/services/",
+            "src/pages/",
+            "src/data/mockData.ts",
+            "src/types/"
+        ],
+        "qa_agent": [
+            "public/images/",
+            "index.html (SEO meta only)"
+        ]
+    },
+    "entry_points": {
+        "mock_data": "src/data/mockData.ts",
+        "api_service": "src/services/api.ts",
+        "types": "src/types/index.ts",
+        "tailwind_config": "tailwind.config.js"
+    },
+    "build_command": "npm run build",
+    "dev_command": "npm run dev -- --port 5181"
+}

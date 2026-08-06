@@ -1,0 +1,65 @@
+name: ${ACP_PROJECT:-acp-backend}
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: ${ACP_PREFIX:-acp}_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${WP_DB_ROOT_PASSWORD:-rootpassword}
+      MYSQL_DATABASE: ${WP_DB_NAME:-wordpress}
+      MYSQL_USER: ${WP_DB_USER:-wordpress}
+      MYSQL_PASSWORD: ${WP_DB_PASSWORD:-wordpress}
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-uroot", "-p$$MYSQL_ROOT_PASSWORD"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    networks: [acp_net]
+
+  wordpress:
+    image: wordpress:7.0-php8.2-apache
+    container_name: ${ACP_PREFIX:-acp}_wp
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${WP_PORT:-8088}:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: ${WP_DB_USER:-wordpress}
+      WORDPRESS_DB_PASSWORD: ${WP_DB_PASSWORD:-wordpress}
+      WORDPRESS_DB_NAME: ${WP_DB_NAME:-wordpress}
+    volumes:
+      - wp_data:/var/www/html
+      - ./mu-plugins:/var/www/html/wp-content/mu-plugins
+    networks: [acp_net]
+
+  wpcli:
+    image: wordpress:cli-php8.2
+    container_name: ${ACP_PREFIX:-acp}_wpcli
+    depends_on:
+      - wordpress
+    volumes:
+      - wp_data:/var/www/html
+      - ./mu-plugins:/var/www/html/wp-content/mu-plugins
+      - ./bin:/acp/bin:ro
+    networks: [acp_net]
+    entrypoint: ["sh", "-c", "sleep infinity"]
+    user: "33:33"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: ${WP_DB_USER:-wordpress}
+      WORDPRESS_DB_PASSWORD: ${WP_DB_PASSWORD:-wordpress}
+      WORDPRESS_DB_NAME: ${WP_DB_NAME:-wordpress}
+
+networks:
+  acp_net:
+    driver: bridge
+
+volumes:
+  db_data:
+  wp_data:

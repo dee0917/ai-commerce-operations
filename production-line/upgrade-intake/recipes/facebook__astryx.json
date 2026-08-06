@@ -1,0 +1,37 @@
+{
+  "repo": "facebook/astryx",
+  "type": "frontend",
+  "template": "vite-react",
+  "replaces_or_adds": "references/modern-ui-frameworks.md 目前收錄的 UI 框架清單。要回答的是：它能不能成為清單裡的一個選項，做出產線規格的商品區。",
+  "files": {
+    "src/App.jsx": "recipes/blocks/facebook__astryx/App.jsx"
+  },
+  "steps": [
+    {
+      "name": "安裝樣板依賴",
+      "cmd": ["npm", "install", "--no-audit", "--no-fund"],
+      "timeout": 900
+    },
+    {
+      "name": "安裝候選套件",
+      "cmd": ["npm", "install", "--no-audit", "--no-fund",
+              "@astryxdesign/core", "@astryxdesign/theme-neutral", "@stylexjs/stylex"],
+      "timeout": 900
+    }
+  ],
+  "build": {
+    "cmd": ["npm", "run", "build"],
+    "timeout": 900
+  },
+  "serve": {
+    "dir": "dist"
+  },
+  "expect": {
+    "routes": ["/"],
+    "min_visible_elements": 40,
+    "min_body_text": 300,
+    "must_contain_text": ["加入購物車", "NT$", "本季精選"],
+    "no_console_error": true,
+    "screenshot_min_bytes": 20000
+  }
+}
